@@ -1,0 +1,314 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap");
+.appDemo {
+  background-color: #f5f3f7;
+  width: 240px;
+  height: 480px;
+  border: 15px solid white;
+  border-radius: 30px;
+  -webkit-box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.1);
+          box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.1);
+  font-size: 0.7em;
+  position: relative;
+}
+
+.appDemo * {
+  pointer-events: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.appDemo .notch {
+  background-color: white;
+  height: 18px;
+  width: 130px;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.appDemo__header {
+  background: #8838ff;
+  background: -webkit-gradient(linear, left top, right top, from(#8838ff), to(#e942ff));
+  background: linear-gradient(90deg, #8838ff 0%, #e942ff 100%);
+  color: white;
+  padding: 20px 10px 10px 5px;
+  border-radius: 5px;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.appDemo__header .icon {
+  height: 15px;
+}
+
+.appDemo__header--left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.appDemo__header--left .profile-pic {
+  border-radius: 50%;
+  border: 2px solid #fff;
+  overflow: hidden;
+  margin: 0 2px;
+}
+
+.appDemo__header--left .profile-pic img {
+  width: 25px;
+}
+
+.appDemo__header--left .profile-details .title {
+  font-weight: 500;
+  font-size: 1.1em;
+}
+
+.appDemo__header--left .profile-details .subtitle {
+  color: #d89eff;
+  font-size: 0.8em;
+}
+
+.appDemo__header .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  height: 20px;
+  width: 5px;
+}
+
+.appDemo__header .menu .dot {
+  height: 4px;
+  width: 4px;
+  border-radius: 50%;
+  background-color: white;
+  display: block;
+}
+
+.appDemo__body {
+  font-size: 0.8em;
+}
+
+.appDemo__body .chatReply__agent,
+.appDemo__body .chatReply__user,
+.appDemo__body .chatReply__pricing,
+.appDemo__body .chatReply__image_user {
+  max-width: 135px;
+  padding: 4px;
+  margin: 10px 5px;
+  border-radius: 5px;
+}
+
+.appDemo__body .chatReply__agent {
+  background-color: rgba(0, 0, 0, 0.05);
+  color: #9241c8;
+}
+
+.appDemo__body .chatReply__user {
+  margin: 10px 5px 5px auto;
+  color: #6e5d7e;
+  background-color: white;
+  -webkit-box-shadow: 0 10px 50px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 10px 50px rgba(0, 0, 0, 0.1);
+}
+
+.appDemo__body .chatReply__image_user {
+  margin: 5px 5px 5px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.appDemo__body .chatReply__image_user .sentImg {
+  width: 40px;
+  margin: auto;
+  border-radius: 7px;
+}
+
+.appDemo__body .chatReply__pricing {
+  background: #8838ff;
+  background: -webkit-gradient(linear, left top, right top, from(#e942ff), to(#8838ff));
+  background: linear-gradient(90deg, #e942ff 0%, #8838ff 100%);
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.appDemo__body .chatReply__pricing .inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.appDemo__body .chatReply__pricing .inner .checkbox-circle {
+  margin-right: 2px;
+  height: 15px;
+  width: 15px;
+  display: inline-block;
+  border: 2px solid #e570ff;
+  border-radius: 50%;
+}
+
+.appDemo__body .chatReply__pricing .price {
+  font-weight: 700;
+  font-size: 2em;
+}
+
+.appDemo__footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 2px;
+  padding: 2px 5px;
+  border-radius: 15px;
+  background-color: white;
+  margin-top: 15px;
+}
+
+.appDemo__footer .icon-holder {
+  background-color: #3e2753;
+  height: 22px;
+  width: 22px;
+  display: -ms-grid;
+  display: grid;
+  place-content: center;
+  border-radius: 50%;
+}
+
+.appDemo__footer .icon-holder .icon {
+  height: 12px;
+  cursor: pointer;
+}
+
+.appDemo__footer .inputbox {
+  width: 100%;
+  color: #c6cacd;
+  padding-top: 7px;
+  border-bottom: 1px solid #c6cacd;
+  font-size: 0.9em;
+  margin-left: 5px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  background-color: #fafafa;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+}
+
+body > div {
+  margin: 0 50px;
+}
+
+.background__gradientDiv, .background__simpleDiv {
+  width: 310px;
+  height: 80vh;
+  position: absolute;
+  z-index: -1;
+  opacity: 0.9;
+}
+
+.background__gradientDiv {
+  background: #8838ff;
+  background: -webkit-gradient(linear, left bottom, left top, from(#8838ff), to(#e942ff));
+  background: linear-gradient(0deg, #8838ff 0%, #e942ff 100%);
+  top: 0;
+  left: -50px;
+  border-radius: 0 0 175px 175px;
+}
+
+.background__simpleDiv {
+  width: 450px;
+  background-color: #f5f3f7;
+  bottom: 0;
+  right: -150px;
+  border-radius: 250px 250px 0 0;
+}
+
+.details__title {
+  color: #3e2753;
+  font-weight: 500;
+  font-size: 2.5em;
+}
+
+.details__para {
+  color: #a39daa;
+  max-width: 450px;
+}
+
+@media screen and (max-width: 900px) {
+  body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-bottom: 50px;
+  }
+  body .appDemo {
+    margin-top: 50px;
+  }
+  body .details {
+    text-align: center;
+  }
+  body .details__title {
+    margin: 20px 0 10px 0;
+    font-size: 2em;
+  }
+}
+/*# sourceMappingURL=style.css.map */
